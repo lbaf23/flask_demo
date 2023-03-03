@@ -13,8 +13,10 @@ pip install -r requirements.txt
 - set config
 ```bash
 cp config.py config_dev.py
-```
+``` 
 > set mysql user and password in config_dev.py
+> 
+> create database `demo`
 
 - run
 ```bash
