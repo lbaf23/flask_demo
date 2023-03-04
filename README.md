@@ -1,8 +1,8 @@
 # Flask Demo
 
-- Flask restful api
-  - with crud example
-- MySQL
+- [Flask](https://flask.net.cn/) Restful API
+  - with crud examples
+- MySQL [Flask-SQLAlchemy — Flask-SQLAlchemy Documentation (3.0.x) (palletsprojects.com)](https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/)
 
 ## dev
 - install
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 - set config
 ```bash
 cp config.py config_dev.py
-``` 
+```
 > set mysql user and password in config_dev.py
 > 
 > create database `demo`
