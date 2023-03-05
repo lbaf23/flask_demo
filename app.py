@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_cors import CORS
-from app.api import config_blueprint
-from app.database import config_database
-from app import config_extensions
+from flask_demo.api import config_blueprint
+from flask_demo.database import config_database
+from flask_demo import config_extensions
 
 
 def create_app():
@@ -18,6 +18,7 @@ def create_app():
 
 
 app = create_app()
+
 
 if __name__ == '__main__':
     app.run(
