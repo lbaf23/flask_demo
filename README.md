@@ -28,3 +28,37 @@ python app.py
 pip install pipreqs
 pipreqs ./ --force --encoding='utf-8'
 ```
+
+## prod
+
+- gunicorn
+- gevent
+
+### cmd
+
+- Linux
+
+```bash
+gunicorn app:app -c gunicorn.conf.py
+```
+
+### docker
+
+```bash
+docker build -t flask_demo .
+```
+
+- Linux
+
+```bash
+docker run --name=flask_demo --network=host -d --rm flask_demo
+```
+
+- others
+
+> docker-desktop doesn't support host network
+
+```bash
+docker run --name=flask_demo -p 5000:5000 -d --rm flask_demo
+```
+
